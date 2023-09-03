@@ -32,30 +32,30 @@
 
     .icon {
       /* Change the icon size here */
-      font-size: 16px;
+      font-size: 17px;
       /* Change the icons colours here*/
       color: #7a7a7a
     }
 
 
     .etsy:hover {
-      color: #FF914A;
+      color: #F28705;
     }
 
-    .koji:hover {
-      color: #23c8c8;
+    .gumroad:hover {
+      color: #FF81D0;
     }
 
-    .buymeacoffee:hover {
-      color: #4267B2;
+    .withkoji:hover {
+      color: #400036;
     }
 
     .instagram:hover {
       color: rgb(241, 102, 217);
     }
 
-    .linkedin:hover {
-      color: #0e76a8;
+    .buymeacoffee:hover {
+      color: #FFEC5C;
     }
 
     .twitter:hover {
@@ -84,7 +84,7 @@
 
     .social {
       position: relative;
-      margin: 7px;
+      margin: 10px;
       cursor: pointer;
     }
   </style>
@@ -96,30 +96,36 @@
   <body>
 
     <div class="wrapper">
- 
-       <!-- Start Withkoji Icon -->
-      <div id="Etsy" onclick="navigate(this.id)" class="social">
-        <span class="icon etsy"><i class="fa-brands fa-kaggle"></i></i></i></span>
+
+      <!-- Start etsy Icon -->
+      <div id="etsy" onclick="navigate(this.id)" class="social">
+        <span class="icon blog"><i class="fa-brands fa-etsy"></i></i></span>
       </div>
-      <!-- End Withkoji Icon -->
-      
-      <!-- Start Buymeacoffee Icon -->
-      <div id="Etsy" onclick="navigate(this.id)" class="social">
-        <span class="icon etsy"><i class="fa-light fa-mug-hot"></i></i></span>
+      <!-- End etsy Icon -->
+
+      <!-- Start gumroad Icon -->
+      <div id="gumroad" onclick="navigate(this.id)" class="social">
+        <span class="icon email"><i class="fa-duotone fa-g"></i></span>
       </div>
-      <!-- End Buymeacoffee Icon -->
-      
-      <!-- Start Etsy Icon -->
-      <div id="Etsy" onclick="navigate(this.id)" class="social">
-        <span class="icon etsy"><i class="fa-brands fa-etsy"></i></span>
+      <!-- End gumroad Icon -->
+
+      <!-- Start withkoji Icon -->
+      <div id="withkoji" onclick="navigate(this.id)" class="social">
+        <span class="icon facebook"><i class="fa-brands fa-kaggle"></i></span>
       </div>
-      <!-- End Etsy Icon -->
-      
+      <!-- End withkoji Icon -->
+
       <!-- Start instagram Icon -->
       <div id="instagram" onclick="navigate(this.id)" class="social">
         <span class="icon instagram"><i class="fab fa-instagram"></i></span>
       </div>
       <!-- End instagram Icon -->
+
+      <!-- Start buymeacoffee Icon -->
+      <div id="buymeacoffee" onclick="navigate(this.id)" class="social">
+        <span class="icon linkedin"><i class="fa-regular fa-mug-hot"></i></span>
+      </div>
+      <!-- End buymeacoffee Icon -->
 
       <!-- Start tiktok Icon -->
       <div id="tiktok" onclick="navigate(this.id)" class="social">
@@ -139,6 +145,7 @@
       </div>
       <!-- End pinterest Icon -->
 
+      
 
 
     </div>
@@ -151,21 +158,21 @@
 
         //if you want the URL to open in the same window use '_parent'  instead of '_blank'
 
-        if (id === "Etsy")
+        if (id === "etsy")
           window.open("https://www.etsy.com/shop/FStoreMC", '_blank').focus(); //Add the url to your blog
 
-        else if (id === "buymeacoffee") {
-          window.open("https://www.buymeacoffee.com/fstoremc", '_blank').focus(); //Add your email after "mailto:""
+        else if (id === "gumroad") {
+          window.open("https://fstoremc.gumroad.com/", '_blank').focus(); //Add your email after "mailto:""
         }
 
         else if (id === "withkoji") {
-          window.open("https://facebook.com/", '_blank').focus(); //Add the url to your facebook page or account
+          window.open("https://withkoji.com/@FStoreMC", '_blank').focus(); //Add the url to your facebook page or account
         }
-        else if (id === "https://withkoji.com/@FStoreMC") {
+        else if (id === "instagram") {
           window.open("https://www.instagram.com/fstoremc/", '_blank').focus(); //Add the url to your instagram account
         }
-        else if (id === "linkedin") {
-          window.open("https://www.linkedin.com/", '_blank').focus(); //Add the url to your pinterest account
+        else if (id === "buymeacoffee") {
+          window.open("https://www.buymeacoffee.com/fstoremc", '_blank').focus(); //Add the url to your pinterest account
         }
         else if (id === "twitter") {
           window.open("https://twitter.com/", '_blank').focus(); //Add the url to your pinterest account
@@ -177,7 +184,7 @@
           window.open("https://www.tiktok.com/@fstoremc", '_blank').focus(); //Add the url to your tiktok account
         }
         else if (id === "youtube") {
-          window.open("https://youtube.com/@fstoremc?si=i6AHBqJm-Fyw3Mxk", '_blank').focus(); //Add the url to your youtube account
+          window.open("https://youtube.com/@fstoremc?si=6DqX3ZPH8adWCPc8", '_blank').focus(); //Add the url to your youtube account
         }
         else if (id === "pinterest") {
           window.open("https://www.pinterest.pt/FStoreMC/", '_blank').focus(); //Add the url to your pinterest account
