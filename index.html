@@ -42,11 +42,11 @@
       color: #FF914A;
     }
 
-    .email:hover {
+    .koji:hover {
       color: #23c8c8;
     }
 
-    .facebook:hover {
+    .buymeacoffee:hover {
       color: #4267B2;
     }
 
@@ -97,9 +97,21 @@
 
     <div class="wrapper">
  
+       <!-- Start Withkoji Icon -->
+      <div id="Etsy" onclick="navigate(this.id)" class="social">
+        <span class="icon etsy"><i class="fa-brands fa-kaggle"></i></i></i></span>
+      </div>
+      <!-- End Withkoji Icon -->
+      
+      <!-- Start Buymeacoffee Icon -->
+      <div id="Etsy" onclick="navigate(this.id)" class="social">
+        <span class="icon etsy"><i class="fa-light fa-mug-hot"></i></i></span>
+      </div>
+      <!-- End Buymeacoffee Icon -->
+      
       <!-- Start Etsy Icon -->
       <div id="Etsy" onclick="navigate(this.id)" class="social">
-        <span class="icon etsy"><i class="fa-solid fa-etsy"></i></span>
+        <span class="icon etsy"><i class="fa-brands fa-etsy"></i></span>
       </div>
       <!-- End Etsy Icon -->
       
@@ -142,14 +154,14 @@
         if (id === "Etsy")
           window.open("https://www.etsy.com/shop/FStoreMC", '_blank').focus(); //Add the url to your blog
 
-        else if (id === "email") {
-          window.open("mailto:someone@yoursite.com", '_blank').focus(); //Add your email after "mailto:""
+        else if (id === "buymeacoffee") {
+          window.open("https://www.buymeacoffee.com/fstoremc", '_blank').focus(); //Add your email after "mailto:""
         }
 
-        else if (id === "facebook") {
+        else if (id === "withkoji") {
           window.open("https://facebook.com/", '_blank').focus(); //Add the url to your facebook page or account
         }
-        else if (id === "instagram") {
+        else if (id === "https://withkoji.com/@FStoreMC") {
           window.open("https://www.instagram.com/fstoremc/", '_blank').focus(); //Add the url to your instagram account
         }
         else if (id === "linkedin") {
